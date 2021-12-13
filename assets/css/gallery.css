@@ -1,0 +1,25 @@
+.gallery-img {
+    width: 100%;
+    max-width: 23rem;
+    max-height: 23rem;
+    overflow: hidden;
+    
+}
+
+.gallery-img img{
+    transition: all 360ms ease-in-out;
+
+}
+
+.gallery-img img:hover{
+    transform: translate(3rem) scale(1.2) rotate(5deg);
+    
+}
+
+.gall{
+    padding: 10rem;
+}
+
+.gall-description{
+    padding: 1rem 0 2rem 0;
+}

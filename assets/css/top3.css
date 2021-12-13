@@ -1,0 +1,45 @@
+.top3-content{
+    min-height: 100vh;
+    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+
+.gridtp3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:var(--gap);
+    counter-reset: gridcounter;
+
+}
+
+.gridtp3 h3 {
+    font-size: 2.5rem;
+    position: relative;
+    padding-left: 5rem;
+
+}
+
+.gridtp3 h3::before {
+    counter-increment: gridcounter;
+    content: counter(gridcounter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    transform: rotate(5deg);
+    top: -0.5rem;
+    left: -1rem;
+    transform: rotate(6deg);
+}
+
+.descrição-top3{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+
+
